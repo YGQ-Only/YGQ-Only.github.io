@@ -235,6 +235,7 @@
     
 
 
+    <div class="comments gitalk-container"></div>
 
 
 <script>
@@ -295,6 +296,27 @@
 
 
 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.0/dist/gitalk.css">
+
+<script>
+NexT.utils.loadComments('.gitalk-container', () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/gitalk@1.7.0/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '2985430685b7c29aac90',
+      clientSecret: 'a7d3b532c2554bda35ef53d8b292398196ae934b',
+      repo        : 'commit',
+      owner       : '',
+      admin       : ['YGQ-Only'],
+      id          : '9876166dc0663ce3105cb28821af9678',
+      proxy       : 'https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token',
+        language: 'zh-CN',
+      distractionFreeMode: true
+    });
+    gitalk.render(document.querySelector('.gitalk-container'));
+  }, window.Gitalk);
+});
+</script>
 
 </body>
 </html>

@@ -171,7 +171,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -201,6 +201,109 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/08/vue%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="YGQ">
+      <meta itemprop="description" content="占得人间一味愚">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YGQ的个人博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/03/08/vue%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/" class="post-title-link" itemprop="url">vue的生命周期</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2021-03-08 09:34:02 / 修改时间：09:34:59" itemprop="dateCreated datePublished" datetime="2021-03-08T09:34:02+08:00">2021-03-08</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="vue-生命周期"><a href="#vue-生命周期" class="headerlink" title="vue-生命周期"></a>vue-生命周期</h2><p>​    vue的生命周期：从无到有，在到无的一个过程(事物从诞生到灭亡的一个过程)</p>
+<p><img src="F:\blog\hexo\public\images\vue-lifeCycle.png"></p>
+<p>主要可分为 <strong>四个阶段</strong>  和 <strong>八个过程</strong></p>
+<p>一、<strong>四个阶段</strong></p>
+<ol>
+<li><p><strong>Create</strong>    —-&gt;创建(页面初始化的时候执行)</p>
+<p>​    Vue实例创建完成后执行，此时的Dom还未生成，</p>
+<p>​    <strong>在模板渲染成页面的html前调用</strong></p>
+<p>​    一般在此处进行一些初始化操作</p>
+</li>
+<li><p><strong>Mount</strong>    —-&gt;挂载(加载)(页面挂载后执行)</p>
+<p>​    此时的Dom已经生成，并挂载在页面上</p>
+<p>​    <strong>在模板渲染成页面的html后调用</strong></p>
+</li>
+<li><p><strong>Upload</strong>   —-&gt;更新(页面发生变化执行)</p>
+<p>​    <strong>将修改后的页面展示出来</strong></p>
+</li>
+<li><p><strong>Destroy</strong>   —-&gt;销毁(vue实例销毁后执行)</p>
+</li>
+</ol>
+<p>二、<strong>八个过程</strong></p>
+<ol>
+<li><p><strong>Create之前</strong>和<strong>Create之后</strong></p>
+<p><strong>beforeCreate</strong> —-&gt;没有创建vue实例之前执行,此时的数据(data)并未加载</p>
+<p><strong>Create</strong>—&gt;Vue实例创建完成后执行，此时的Dom还未生成，</p>
+</li>
+<li><p><strong>Mount之前</strong>和<strong>Mount之后</strong></p>
+<p><strong>beforeMount</strong> —&gt;数据在挂载之前执行，此时页面还未创建出HTML元素,data初始化完成，虚拟DOM已经存在</p>
+<p><strong>Mounted</strong>—&gt;模板编译完成并开始挂载</p>
+</li>
+<li><p><strong>Upload之前</strong>和<strong>Upload之后</strong></p>
+<p><strong>beforeUpload</strong>—&gt;组件更新之前调用的函数，此时页面未展示修改的内容，</p>
+<p><strong>Upload</strong>—&gt;组件更新之后执行，修改后的页面将被展示出来</p>
+</li>
+<li><p><strong>Destroy之前</strong>和<strong>Destroy之后</strong></p>
+<p><strong>beforeDestroy</strong>—&gt;vue实例销毁之前执行的方法</p>
+<p><strong>Destroy</strong>—&gt;vue实例之后执行的方法</p>
+</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
